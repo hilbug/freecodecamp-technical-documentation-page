@@ -1,0 +1,19 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+@media all and (max-width: 850px) {
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .main-section {
+        padding-top: 75px;
+    }
+
+}
