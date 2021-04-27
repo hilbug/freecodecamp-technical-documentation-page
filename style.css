@@ -6,11 +6,16 @@
 }
 
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 750px) {
 
     .navbar-container {
         display: flex;
         flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        padding: 2%;
     }
     
     .main-section {
