@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header, .navbar-container {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+section > header {
+    font-size: 1.75rem;
+}
+
 .navbar-container {
     display: flex;
     flex-direction: column;
     padding: 0;
     overflow-y: scroll;
+}
+
+#main-doc {
+    padding-top: 8px;
 }
 
 
@@ -19,7 +38,15 @@
     }
     
     .main-section {
-        padding-top: 75px;
+        padding-top: 60px;
     }
 
 }
+
+/* 
+
+Resources to look at
+
+Ho TO - Fixed Sidebar W3Schools: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+
+*/
