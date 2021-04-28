@@ -5,7 +5,8 @@ body {
     
 }
 
-header, .navbar-container {
+header, 
+.navbar-container {
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -20,12 +21,39 @@ section > header {
     overflow-y: scroll;
 }
 
+nav, 
+.navbar-container,
+.navbar-collapse, 
+.navbar-brand,
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+.nav-link, 
+.navbar-brand {
+    border-bottom: solid thin black;
+    padding-left: 20px !important;
+}
+
+.nav-link:nth-child(odd) {
+    background-color: #eee
+}
+
 #main-doc {
     padding-top: 8px;
 }
 
 
 @media all and (max-width: 750px) {
+
+    .navbar {
+        display: flex;
+        flex-flow: row wrap;
+    }
 
     .navbar-container {
         display: flex;
@@ -35,10 +63,21 @@ section > header {
         left: 0;
         background-color: white;
         padding: 2%;
+        border-bottom: solid thin black;
+    }
+
+    .navbar-container > button {
+        margin: auto;
+    }
+
+    .navbar-brand {
+        border: none;
+        text-align: center;
+        padding: 0;
     }
     
-    .main-section {
-        padding-top: 60px;
+    .main-section:first-of-type {
+        padding-top: 92px;
     }
 
 }
