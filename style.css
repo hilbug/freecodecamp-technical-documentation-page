@@ -50,14 +50,22 @@ nav,
 pre {
     color: red;
     background-color: gainsboro;
-    white-space: normal;
+    white-space: pre-line;
     padding: 15px 25px;
     margin: 0 25px;
+}
+
+code {
+    white-space: pre;
 }
 
 .span-code {
     color: red;
     background-color: gainsboro;
+}
+
+.span-code-note {
+    color: green;
 }
 
 @media all and (max-width: 750px) {
