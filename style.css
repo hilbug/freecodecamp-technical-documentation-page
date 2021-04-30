@@ -47,6 +47,18 @@ nav,
     padding-top: 8px;
 }
 
+pre {
+    color: red;
+    background-color: gainsboro;
+    white-space: normal;
+    padding: 15px 25px;
+    margin: 0 25px;
+}
+
+.span-code {
+    color: red;
+    background-color: gainsboro;
+}
 
 @media all and (max-width: 750px) {
 
@@ -87,5 +99,11 @@ nav,
 Resources to look at
 
 Ho TO - Fixed Sidebar W3Schools: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+
+https://forum.freecodecamp.org/t/escaping-escape-characters/283462/2
+
+https://www.bitdegree.org/learn/css-text#text-indent
+
+https://dev.w3.org/html5/html-author/charref
 
 */
