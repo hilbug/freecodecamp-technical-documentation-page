@@ -47,7 +47,7 @@
                         <header>First Section</header>
                         <!-- <header>Welcome to Bootstrap</header> -->
                         <p>This document will walk you through creating a basic fan page for a TV show using Bootstrap
-                            5. The fan page
+                            5 components and classes and minimal custom CSS. The fan page
                             will consist of:
                         <ul>
                             <li>Navigation bar</li>
@@ -78,9 +78,9 @@
                         </p>
                         <pre>
                             <code class="language-html" data-lang="html">
-                                &lt;div class="container"&gt;
+                                &lt;div class="container-fluid"&gt;
                                     &lt;div class="row"&gt;
-                                        &lt;div class="col-12"&gt;
+                                        &lt;div class="col-12 p-0"&gt;
                                             <span class="span-code-note">Navigation and Hero section will go inside here</span>
                                         &lt;/div&gt;
                                     &lt;/div&gt;
@@ -88,24 +88,44 @@
                             </code>
                         </pre>
 
+                        <p class="pt-2">A few notes about what we have added:
+                        <ul>
+                            <li>The class <span class="span-code">.container-fluid</span> so that it spans the whole
+                                width of the screen</li>
+                            <li>The class <span class="span-code">.p-0</span> on the column removes the padding around
+                                the column itself so the navbar
+                                is the whole width of the screen.</li>
+                        </ul>
+                        </p>
+
                         <p class="pt-3">To learn more about Bootstrap, visit the <a
                                 href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Getting
                                 Started</a> section of their website.
                         </p>
-
-
                         <hr>
                     </section>
                     <section id="Second_Section" class="main-section">
                         <header>Second Section</header>
-                        <p>Alright, McFly, you're asking for it, and now you're gonna get it. What did I just say? Huh?
-                            I
-                            followed you. Hey Marty, I'm not your answering service, but you're outside pouting about
-                            the
-                            car, Jennifer Parker called you twice.</p>
-                        <p>Why that's me, look at me, I'm an old man. Yeah, it's 8:00. Stop it. It's already mutated
-                            into
-                            human form, shoot it. Keys?</p>
+                        <p>A nice thing about Bootstrap are its reusable components. We are going to include a simple
+                            nav with links to the character bios, additional reading, and the YouTube video. For this
+                            project, I
+                            am just going to use a <span class="span-code">.nav</span> component. Inside the col-12, we
+                            will add the following:</p>
+                        <pre>
+                                <code class="language-html" data-lang="html">
+                                    &lt;nav class="nav justify-content-center bg-info bg-gradient" role="navigation"&gt;
+                                        &lt;a class="nav-link" href="#"&gt;Characters&lt;/a&gt;
+                                        &lt;a class="nav-link" href="#"&gt;Articles&lt;/a&gt;
+                                        &lt;a class="nav-link" href="#"&gt;Video&lt;/a&gt;
+                                      &lt;/nav&gt;
+                                </code>
+
+                            </pre>
+
+                        <p class="pt-3">To learn more about Bootstrap nav components, visit the <a
+                                href="https://getbootstrap.com/docs/5.0/components/navs-tabs/">Navs & tabs</a> section
+                            of their website.</p>
+                        <hr>
                     </section>
                     <section id="Third_Section" class="main-section">
                         <header>Third Section</header>
