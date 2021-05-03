@@ -91,7 +91,7 @@
                         <p class="pt-2">A few notes about what we have added:
                         <ul>
                             <li>The class <span class="span-code">.container-fluid</span> so that it spans the whole
-                                width of the screen</li>
+                                width of the screen.</li>
                             <li>The class <span class="span-code">.p-0</span> on the column removes the padding around
                                 the column itself so the navbar
                                 is the whole width of the screen.</li>
@@ -121,10 +121,52 @@
                                 </code>
 
                             </pre>
+                        <p class="pt-2">Next, we will create the hero section. First, let's add the background image via
+                            CSS. We will give the hero section the class <span class="span-code">.hero</span>. The
+                            height will be set to 50vh (50% of the viewport height). You can use any image you like. An
+                            easy way to get an image from the internet is to right-click and select Copy Image Address:
+                        </p>
+                        <pre>
+                            <code class="language-css" data-lang="html">
+                                .hero {
+                                    background-image: url("https://miro.medium.com/max/2560/1*cRmipwCGD5drJv6tQNNwBQ.jpeg");
+                                    background-position: center;
+                                    background-size: auto;
+                                    background-repeat: no-repeat;
+                                    height: 50vh;
+                                }
+                            </code>
+                        </pre>
 
-                        <p class="pt-3">To learn more about Bootstrap nav components, visit the <a
-                                href="https://getbootstrap.com/docs/5.0/components/navs-tabs/">Navs & tabs</a> section
-                            of their website.</p>
+                        <p class="pt-2">Next, let's add the hero section to the HTML and add header text with the TV
+                            show's name:</p>
+                        <pre>
+                            <code class="language-html" data-lang="html">
+                                &lt;div class="hero p-5 bg-light d-flex align-items-end justify-content-center"&gt;
+                                    &lt;h1 class="rounded bg-info text-center text-light p-2"&gt;Dawson's Creek&lt;/h1&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+
+                        <p class="pt-2">A few notes about what we have added:
+                        <ul>
+                            <li>The classes <span class="span-code">.d-flex, .align-items-end,
+                                    .justify-content-center</span> allow us to position the h1 in the center at the
+                                bottom of the div because Bootstrap uses FlexBox utilities.</li>
+                            <li>The classes <span class="span-code">.rounded, .text-center, .text-light, and
+                                    .bg-info</span> allow us to transform the h1 using Bootstrap classes.</li>
+                        </ul>
+                        </p>
+
+                        <p class="pt-3">To learn more about:
+                        <ul>
+                            <li>nav components, visit <a
+                                    href="https://getbootstrap.com/docs/5.0/components/navs-tabs/">Navs & tabs</a>
+                                section.</li>
+                            <li>flex utilities, visit <a
+                                    href="https://getbootstrap.com/docs/5.0/utilities/flex/">Flex</a> section.</li>
+                        </ul>
+                        </p>
                         <hr>
                     </section>
                     <section id="Third_Section" class="main-section">
