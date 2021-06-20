@@ -139,7 +139,7 @@
                         </pre>
 
                         <p class="pt-2">Next, let's add the hero section to the HTML and add header text with the TV
-                            show's name:</p>
+                            show's name. This will be added below the nav:</p>
                         <pre>
                             <code class="language-html" data-lang="html">
                                 &lt;div class="hero p-5 bg-light d-flex align-items-end justify-content-center"&gt;
@@ -171,20 +171,63 @@
                     </section>
                     <section id="Third_Section" class="main-section">
                         <header>Third Section</header>
-                        <p>Flux capacitor. I think we need a rematch. My name's Lorraine, Lorraine Baines. David, watch
-                            your
-                            mouth. You come here and kiss your mother before you go, come here. Hey I'm talking to you,
-                            McFly, you Irish bug.</p>
-                        <p>What's a rerun? No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling
-                            through the parking lot, you see us struggling in the car, you walk up, you open the door
-                            and
-                            you say, your line, George. Jesus. Alright, c'mon, I think we're safe. Watch this. Not me,
-                            the
-                            car, the car. My calculations are correct, when this baby hits eighty-eight miles per hour,
-                            your
-                            gonna see some serious shit. Watch this, watch this. Ha, what did I tell you, eighty-eight
-                            miles
-                            per hour. The temporal displacement occurred at exactly 1:20 a.m. and zero seconds.</p>
+                        <p>We are now going to add a section for characters. Each character will have its own card using
+                            another Bootstrap component. Below the first row, let's add a new <span
+                                class="span-code">div</span> which will contain the character cards. Each card will have
+                            a photo, the character's name, and a brief bio. The cards will be centered on the page and
+                            will leverage row column classes to preserve the alignment. Here is an example of the <span
+                                class="span-code">div</span> with one character card. Each card image was given a height
+                            of 329px in CSS:</p>
+                        <pre>
+                            <code class="language-html" data-lang="html">
+                                &lt;!-- Character Cards --&gt;
+                                &lt;div id="characters" class="row bg-info bg-gradient d-flex justify-content-center"&gt;
+                                    &lt;h2 class="text-center p-2 bg-white rounded w-100 mt-3 text-info"&gt;Character Bios&lt;/h2&gt;
+                                    &lt;div class="col-9 p-3"&gt;
+                                        &lt;!-- CARD ROWS --&gt;
+                                        &lt;div class="row row-cols-1 row-cols-md-2 g-4"&gt;
+                                            &lt;!-- Joey Potter --&gt;
+                                            &lt;div class="col"&gt;
+                                                &lt;div class="card shadow-lg rounded"&gt;
+                                                    &lt;img src="https://static.onecms.io/wp-content/uploads/sites/13/2015/09/02/Screen-Shot-2015-09-02-at-12.12.48-PM.jpg"
+                                                        class="card-img-top" alt="joey potter smiling at camera"&gt;
+                                                    &lt;div class="card-body"&gt;
+                                                        &lt;h5 class="card-title text-center"&gt;Josephine Potter&lt;/h5&gt;
+                                                        &lt;p class="card-text"&gt;Josephine Potter, known as Joey, is a childhood friend of Dawson
+                                                            Leery. She lives with her sister, sister's boyfriend, and nephew. Her mother died of
+                                                            cancer when she was young. Her father is in prison for trafficking drugs. She is one
+                                                            of the smartest students at Capeside High and hopes to attend Wentworth upon
+                                                            graduation.&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
+
+                        <p class="pt-2">A few notes about what we have added:
+                        <ul>
+                            <li>The card row classes <span class="span-code">row row-cols-1 row-cols-md-2 g-4</span>
+                                allow us to leverage Bootstrap's grid to neatly position the cards. </li>
+                            <li>The classes <span class="span-code">.shadow-lg rounded</span> allow us to style and add
+                                dimension to the cards.</li>
+                        </ul>
+                        </p>
+
+                        <p class="pt-3">To learn more about:
+                        <ul>
+                            <li>Bootstrap cards, visit the <a
+                                    href="https://getbootstrap.com/docs/5.0/components/card/">Card</a> section.</li>
+                            <li>Grid cards, visit <a
+                                    href="https://getbootstrap.com/docs/5.0/components/card/#grid-cards">Card > Grid
+                                    cards</a>
+                                section.</li>
+                        </ul>
+                        </p>
+
+                        <hr>
                     </section>
                     <section id="Fourth_Section" class="main-section">
                         <header>Fourth Section</header>
