@@ -231,22 +231,95 @@
                     </section>
                     <section id="Fourth_Section" class="main-section">
                         <header>Fourth Section</header>
-                        <p>Yeah, I'll keep that in mind. Oh, you make it sound so easy. I just, I wish I wasn't so
-                            scared.
-                            Um, yeah, I'm on my way. Yeah, who are you? Huh?
+                        <p>We are now going to add a section to display links to articles about the tv show and its
+                            actors. This will
+                            be a new row below the character bios section. The articles will be added as a stretched
+                            link, meaning clicking anywhere within in the article's row will open the link. We will make
+                            the background the ligther color and the section hearder's background will be the acqua
+                            blue. Each article will have a picture, the title of the article, a blurb from the article,
+                            and a hyperlink to read the article. Let's get started:</p>
+                        <pre>
+                            <code class="language-html" data-lang="html">
+                                &lt;!-- ARTICLES --&gt;
+                                &lt;div id="articles" class="row bg-white d-flex justify-content-center"&gt;
+                                    &lt;h2 class="text-center p-2 bg-info bg-graident rounded w-100 mt-3 text-light"&gt;Articles&lt;/h2&gt;
+                                    &lt;div class="col-9 p-3"&gt;
+                                        &lt;!-- Article 1 --&gt;
+                                        &lt;div class="row g-0 bg-light position-relative"&gt;
+                                            &lt;div class="col-md-6 mb-md-0 p-md-4"&gt;
+                                                &lt;img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2Few1509_2186328197231908-2000.jpg"
+                                                    class="w-100 img-fluid"
+                                                    alt="Cast of Dawson's Creek smilling at the camera on the cover of Entertainment Weekly"&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="col-md-6 p-4 ps-md-0 d-flex flex-column align-self-center"&gt;
+                                                &lt;h5 class="mt-0"&gt;Dawson's Creek cast reunites for its 20th anniversary on this week's EW cover
+                                                &lt;/h5&gt;
+                                                &lt;p&gt;You no longer have to wait. For the first time since the 2003 finale, the cast of one of the
+                                                    most iconic, beloved, and meme-worthy teen dramas ever, Dawson’s Creek, has reunited, thanks
+                                                    to Entertainment Weekly. “I think we’ve all sort of seen each other over the years, but not
+                                                    everybody all together,” says Katie Holmes. “And never for long enough.” Adds creator Kevin
+                                                    Williamson (Scream), “I run into James and Josh, Katie, Michelle, and I just get a big smile
+                                                    on my face. It’s just a very, very special time in my life.”&lt;/p&gt;
+                                                &lt;a href="https://ew.com/tv/2018/03/28/dawsons-creek-reunion-ew-cover/"
+                                                    class="stretched-link"&gt;Read more...&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- Article 2 --&gt;
+                                        &lt;div class="row g-0 bg-light position-relative mt-3"&gt;
+                                            &lt;div class="col-md-6 p-4 ps-md-0 d-flex flex-column align-self-center"&gt;
+                                                &lt;h5 class="mt-0"&gt;Why Dawson’s Creek, in all its cringey glory, is the TV show 90s kids need
+                                                    right now&lt;/h5&gt;
+                                                &lt;p&gt;In times of flux and crisis, nostalgia works like a social ointment, mixed and mashed
+                                                    together through imperfect memory. Netflix’s re-release of Dawson’s Creek (1998-2003) is an
+                                                    ointment tailor-made for adults who were once 90s kids. In the 90s we were on the verge of
+                                                    adulthood, all the complexity of the teenage drama playing out on Dawson’s Creek titillating
+                                                    our adolescence. And now we’ve arrived, we want desperately to go back to our teenage years.
+                                                &lt;/p&gt;
+                                                &lt;a href="https://theconversation.com/why-dawsons-creek-in-all-its-cringey-glory-is-the-tv-show-90s-kids-need-right-now-148539"
+                                                    class="stretched-link"&gt;Read more...&lt;/a&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="col-md-6 mb-md-0 p-md-4"&gt;
+                                                &lt;img src="https://images.theconversation.com/files/366625/original/file-20201030-22-1tb2vy8.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=391&fit=crop&dpr=2"
+                                                    class="w-100"
+                                                    alt="Jack and Joey sitting at a dinner table across from each other, looking down at the table"&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </pre>
 
-                            I'll call you tonight. Who are you calling spook, pecker-wood. Tab? I can't give you a tab
-                            unless you order something. What you got under here? Yeah, I'll keep that in mind.</p>
-                        <p>Huh? Okay, alright, I'll prove it to you. Look at my driver's license, expires 1987. Look at
-                            my
-                            birthday, for crying out load I haven't even been born yet. And, look at this picture, my
-                            brother, my sister, and me. Look at the sweatshirt, Doc, class of 1984. Hey, Doc, we better
-                            back
-                            up, we don't have enough roads to get up to 88. I need fuel. Go ahead, quick, get in the
-                            car.
-                            I'm telling the truth, Doc, you gotta believe me.</p>
+                        <p class="pt-2">A few notes about what we have added:
+                        <ul>
+                            <li>Many of the classes that have been added are part of the Strethced link html snippet.
+                            </li>
+                            <li>I changed the order of the html so that the pitures were staggered.</li>
+                            <li>I added flex classes <span class="span-code">d-flex flex-column align-self-center</span>
+                                to
+                                the <span class="span-code">div</span> containing the article blurb so that it was
+                                centered
+                                vertically alongside the picture.</li>
+                        </ul>
+                        </p>
+
+                        <p class="pt-3">To learn more about:
+                        <ul>
+                            <li>Stretched links, visit the <a
+                                    href="https://getbootstrap.com/docs/5.0/helpers/stretched-link/">Stretched link</a>
+                                section.</li>
+                            <li>Flexbox, visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A
+                                    Complete Guide to Flexbox</a> on CSS Tricks.
+                            </li>
+                        </ul>
+                        </p>
+
+                        <hr>
                     </section>
                     <section id="Fifth_Section" class="main-section">
+                        <!-- 
+                            Carousel for Videos
+                            https://getbootstrap.com/docs/5.0/components/carousel/
+                        -->
                         <header>Fifth Section</header>
                         <p>Thank you. In about thirty years. Wow, ah Red, you look great. Everything looks great. 1:24,
                             I
