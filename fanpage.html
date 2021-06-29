@@ -21,7 +21,7 @@
                 <nav class="nav justify-content-center bg-info bg-gradient" role="navigation">
                     <a class="nav-link link-light" href="#characters">Characters</a>
                     <a class="nav-link link-light" href="#articles">Articles</a>
-                    <a class="nav-link link-light" href="#">Video</a>
+                    <a class="nav-link link-light" href="#videos">Videos</a>
                 </nav>
                 <!-- HERO -->
                 <div class="hero p-5 bg-light d-flex align-items-end justify-content-center w-100">
@@ -104,7 +104,7 @@
             <div class="col-9 p-3">
                 <!-- Article 1 -->
                 <div class="row g-0 bg-light position-relative">
-                    <div class="col-md-6 mb-md-0 p-md-4">
+                    <div class="col-md-6 mb-md-0 p-md-4 d-flex flex-column align-self-center">
                         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2Few1509_2186328197231908-2000.jpg"
                             class="w-100 img-fluid"
                             alt="Cast of Dawson's Creek smilling at the camera on the cover of Entertainment Weekly">
@@ -124,7 +124,7 @@
                 </div>
                 <!-- Article 2 -->
                 <div class="row g-0 bg-light position-relative mt-3">
-                    <div class="col-md-6 p-4 ps-md-0 d-flex flex-column align-self-center">
+                    <div class="col-md-6 p-4 d-flex flex-column align-self-center">
                         <h5 class="mt-0">Why Dawson’s Creek, in all its cringey glory, is the TV show 90s kids need
                             right now</h5>
                         <p>In times of flux and crisis, nostalgia works like a social ointment, mixed and mashed
@@ -136,11 +136,73 @@
                         <a href="https://theconversation.com/why-dawsons-creek-in-all-its-cringey-glory-is-the-tv-show-90s-kids-need-right-now-148539"
                             class="stretched-link">Read more...</a>
                     </div>
-                    <div class="col-md-6 mb-md-0 p-md-4">
+                    <div class="col-md-6 mb-md-0 p-md-4 d-flex flex-column align-self-center">
                         <img src="https://images.theconversation.com/files/366625/original/file-20201030-22-1tb2vy8.jpg?ixlib=rb-1.1.0&q=30&auto=format&w=600&h=391&fit=crop&dpr=2"
                             class="w-100"
                             alt="Jack and Joey sitting at a dinner table across from each other, looking down at the table">
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- VIDEOS -->
+        <div id="videos" class="row bg-info d-flex justify-content-center">
+            <h2 class="text-center p-2 bg-white bg-graident rounded w-100 mt-3 text-info">Videos</h2>
+            <div class="col-9 p-3 py-4">
+                <!-- CAROUSEL -->
+                <div id="carouselvideos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Video 1"></button>
+                        <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="1"
+                            aria-label="Video 2"></button>
+                        <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="2"
+                            aria-label="Video 3"></button>
+                        <button type="button" data-bs-target="#carouselvideos" data-bs-slide-to="3"
+                            aria-label="Video 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <iframe class="d-block w-100" width="560" height="315"
+                                src="https://www.youtube.com/embed/h_ftJLTeszY" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="d-block w-100" width="560" height="315"
+                                src="https://www.youtube.com/embed/LgCMDmMXuFc" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <iframe class="d-block w-100" width="560" height="315"
+                                src="https://www.youtube.com/embed/m52MBSE5XWI" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                            <iframe class="d-block w-100" width="560" height="315"
+                                src="https://www.youtube.com/embed/ziqKYsbWvKw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselvideos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselvideos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
